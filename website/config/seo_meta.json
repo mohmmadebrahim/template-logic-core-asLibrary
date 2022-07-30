@@ -1,0 +1,25 @@
+{
+    "title": "ACME Storefront | Powered by example web",
+    "titleTemplate": "%s - ACME Storefront",
+    "description": "example web - https://www.web example.org/web",
+    "openGraph": {
+      "title": "ACME Storefront | Powered by example web",
+      "description": "example web - https://www.web example.org/web",
+      "type": "website",
+      "url": "https://web example.org/web",
+      "site_name": "example web",
+      "images": [
+        {
+          "url": "/card.png",
+          "width": "800",
+          "height": "600",
+          "alt": "example web"
+        }
+      ]
+    },
+    "twitter": {
+      "handle": "@web example",
+      "site": "@web example",
+      "cardType": "summary_large_image"
+    }
+  }
