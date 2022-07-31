@@ -1,5 +1,5 @@
 {
-    "name": "core",
+    "name": "core-landing",
     "version": "1.0.0",
     "description": "logic of project",
     "main": "dist/index.js",
@@ -10,7 +10,7 @@
     "scripts": {
         "build": "tsc"
     },
-    "author": "m.e.ghobadi",
+    "author": "ALMB",
     "license": "ISC",
     "dependencies": {
         "@reduxjs/toolkit": "1.8.3",

@@ -24,7 +24,7 @@ export async function customApi(required: Required<ApiInputRequired>, optional: 
 
     return response.then((res) => {
         //todo toast must be show message from server
-        if (res.result) {
+        if (res.status) {
             return res.data
         } else  {          
             throw new ServerError(res.message);

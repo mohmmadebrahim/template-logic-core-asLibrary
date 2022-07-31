@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
+import localforage = require('localforage')
 import { AppState, customApi } from '../../util'
 
 
@@ -16,8 +17,9 @@ const initialState: CounterState = {
 }
 
 export const getDataTestAsync = async () => {
-    const response = await customApi({ url: 'https://api.faridbahrami.ir/api/barber' }, { method: "GET", formData: false })
+    const response = await customApi({ url: 'https://dev.optics4less.com/public/api/application/v2/banners' }, { method: "GET", formData: false })
     // The value we return becomes the `fulfilled` action payload
+    localforage.setItem("testData", response)
     return response
 }
 

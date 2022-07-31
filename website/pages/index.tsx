@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import { useEffect } from 'react'
-import { decrement, increment, getDataTestAsync, setDataTest } from "core"
+import { decrement, increment, getDataTestAsync, setDataTest } from "core-salons"
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
+import localForage from "localforage"
 
 const Home: NextPage = () => {
 
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div className={" w-full flex flex-col justify-center items-center"}>
+    <div className={" w-full flex flex-col justify-center items-center "}>
       <h1 className=' my-6 text-[35px] '> Hello Core Logic (as Lib)</h1>
       <div className=' w-full flex justify-center items-center my-12 flex-wrap'>
         <p className=' w-full text-center mb-3'> counter with RTK(redux tool kit)</p>
@@ -35,6 +36,12 @@ const Home: NextPage = () => {
         console.log(testData);
       }}>
         Log Data from Api Test
+      </h1>
+      <h1 className=' mt-4' onClick={async () => {
+        const localF = await localForage.getItem("testData")
+        console.log(localF);
+      }}>
+        Test localforage
       </h1>
     </div>
   )

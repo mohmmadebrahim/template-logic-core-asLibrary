@@ -1,20 +1,74 @@
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../public/assets/fonts/static/Quicksand-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('../public/assets/fonts/static/Quicksand-Medium.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+    --body--: #fdfdfd;
+    --shadow--: #bbbbbb;
+    --salon--bar--: #404b57;
+    --salon--text--light--: #ffffff;
+    --salon--text--dark--: #383D3B;
+    --landing--bar--: #6E95EF;
+    --landing--text--light--: #ffffff;
+    --landing--text--dark--: #383D3B;
+}
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: var(--body);
+    scroll-behavior: smooth;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+span,
+div,
+a,
+p,
+button,
+b {
+    font-family: 'Quicksand-Medium', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand-Bold', sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
