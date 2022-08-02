@@ -8,6 +8,8 @@
     src: url('../public/assets/fonts/static/Quicksand-Medium.ttf');
 }
 
+@import url(./css/multi-under-dash.css);
+@import url(./css/btn-loader.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,10 +18,10 @@
     --shadow--: #bbbbbb;
     --salon--bar--: #404b57;
     --salon--text--light--: #ffffff;
-    --salon--text--dark--: #383D3B;
-    --landing--bar--: #6E95EF;
+    --salon--text--dark--: #414042;
+    --landing--bar--: #ffbe00;
     --landing--text--light--: #ffffff;
-    --landing--text--dark--: #383D3B;
+    --landing--text--dark--: #414042;
 }
 
 html,
@@ -71,4 +73,8 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+.Quicksand-Bold {
+    font-family: 'Quicksand-Bold', sans-serif !important;
 }

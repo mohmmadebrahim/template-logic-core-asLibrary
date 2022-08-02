@@ -1,6 +1,6 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import localforage = require('localforage')
-import { AppState, customApi } from '../../util'
+import { customApi } from '../../util'
 
 
 

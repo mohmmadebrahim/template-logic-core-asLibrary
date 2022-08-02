@@ -22,6 +22,9 @@ module.exports = {
                     "text-light": "var(--landing--text--light--)",
                     "text-dark": "var(--landing--text--dark--)",
                 },
+            },
+            borderRadius: {
+                'main': '16px',
             }
         },
     },

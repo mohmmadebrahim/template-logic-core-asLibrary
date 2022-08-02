@@ -1,7 +1,7 @@
-import { ApiInputOptional, ApiInputRequired } from "../../types"
+import { TApiInputOptional, TApiInputRequired } from "../../types"
 import { ServerError, getToken } from ".."
 
-export async function customApi(required: Required<ApiInputRequired>, optional: Partial<ApiInputOptional>) {
+export async function customApi(required: Required<TApiInputRequired>, optional: Partial<TApiInputOptional>) {
     const init: RequestInit = {}
     const headers: HeadersInit = {}
     if (optional.token) headers['Authorization'] = await getToken() ?? ""

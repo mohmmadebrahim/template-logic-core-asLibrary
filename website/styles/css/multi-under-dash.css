@@ -1,0 +1,33 @@
+.multi-under-dash {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.multi-under-dash div {
+    background: var(--landing--bar--);
+    border-radius: 2px;
+    height: 4px;
+    margin-right: 0.3rem;
+}
+
+.multi-under-dash p {
+    margin: 0;
+}
+
+.multi-under-dash div:nth-child(1) {
+    width: 0.5rem;
+}
+
+.multi-under-dash div:nth-child(2) {
+    width: 1rem;
+}
+
+.multi-under-dash div:nth-child(3) {
+    width: 1.5rem;
+}
+
+.multi-under-dash div:nth-child(4) {
+    width: 2rem;
+}
