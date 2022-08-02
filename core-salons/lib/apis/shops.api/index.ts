@@ -1,4 +1,4 @@
-import { baseUrl, customApi } from "../../util";
+import { baseUrl, customApi } from "core";
 
 
 export function ShopsApi<T>(arg: T): T {

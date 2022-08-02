@@ -1,1 +1,1 @@
-export * from "./api.t"
+export * from "./contact"

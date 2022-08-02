@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import localforage = require('localforage')
-import { customApi } from 'core'
+import { customApi } from '../../util'
 
 
 

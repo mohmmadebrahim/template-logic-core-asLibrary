@@ -1,6 +1,7 @@
 import { ContactApi } from "../../apis";
 import { TContact, TContactResponse } from "../../types";
-import { isInvalidAddress } from "../../util";
+import { isInvalidAddress } from "core";
+
 
 export const sendContact = async (e: any): Promise<TContactResponse> => {
     e.preventDefault()

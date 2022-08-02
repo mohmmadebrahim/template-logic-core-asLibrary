@@ -6,9 +6,15 @@ import coreStoreSalons from "core-salons/dist/util/redux/store/index"
 import coreStoreLanding from "core-salons/dist/util/redux/store/index"
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { useEffect } from 'react'
+import { ThemeMode } from 'core'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+  useEffect(()=>{
+    ThemeMode({})
+  }, [])
 
   return (
     <>

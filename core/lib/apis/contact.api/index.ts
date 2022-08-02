@@ -1,5 +1,5 @@
 import { TContact, TContactResponse } from "../../types";
-import { baseUrl, customApi } from "core";
+import { baseUrl, customApi } from "../../util";
 
 export const ContactApi = async (body: TContact) : Promise<TContactResponse> => {
     // const data = await customApi({ url: `${baseUrl}/auth/login` }, { method: "POST", body: postData })
