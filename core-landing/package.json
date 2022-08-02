@@ -10,7 +10,7 @@
     "scripts": {
         "build": "tsc"
     },
-    "author": "ALMB",
+    "author": "@m.e.ghobadi",
     "license": "ISC",
     "dependencies": {
         "@reduxjs/toolkit": "1.8.3",
